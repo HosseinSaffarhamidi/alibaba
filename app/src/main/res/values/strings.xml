@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">علی بابا</string>
+    <string name="morning">صبح بخیر</string>
+    <string name="intro_app">علی بابا همسفر حرفه ای ها</string>
+    <string name="app_version">7.0.0</string>
+    <string name="error_connection">خطا در اتصال اینترنت</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="chair_wrning">شما صندلی خود را انتخاب کردید . لطفا یک شخص را به عنوان سرپرست مسافران یا نام مسافر انتخاب کنید.</string>
+    <string name="warning_take_chair">جایی که دوست دارید بنشینید را در تصویر مشخص کنید.برای پیشگیری از مشکلات بعدی ،لطفا به جنسیت مسافر صندلی مجاور توجه فرمایید.</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CitiesActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:elevation="8dp"
+        android:background="@color/color_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="8dp"
+                android:id="@+id/img_cities_back"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edt_cities_search"
+                android:fontFamily="@font/font"
+                android:hint="جستجو شهر..."
+                android:gravity="right"
+                android:layout_margin="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_cities_back"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cities_city"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

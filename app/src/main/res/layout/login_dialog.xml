@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/color_white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="لطفا وارد حساب کاربری خود شوید"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/edt_loginDialog_email"
+        android:drawableRight="@drawable/ic_email_black_24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:hint="پست الکترونیک"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edt_loginDialog_pass"
+        android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPassword"
+        android:hint="رمز عبور"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="right"
+        android:text="فراموشی رمز عبور"
+        android:drawableRight="@drawable/ic_vpn_key_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_loginDialog_signup"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/color_white"
+            android:fontFamily="@font/font"
+            android:background="@drawable/btn_signup_style"
+            android:text="ثبت نام"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_loginDialog_login"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/color_white"
+            android:fontFamily="@font/font"
+            android:background="@drawable/btn_call_style"
+            android:text="ورود"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

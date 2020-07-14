@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg_insideFlight_radioGroup"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:fontFamily="@font/font"
+            android:layout_marginRight="16dp"
+            android:id="@+id/rd_insideFlight_two"
+            android:text="دو طرفه"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:fontFamily="@font/font"
+            android:checked="true"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/rd_insideFlight_one"
+            android:text="یک طرفه"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/edt_insideFlight_source"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/font"
+        android:drawableRight="@drawable/ic_airplanemode_active_black_24dp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="شهر مبدا"
+        android:layout_below="@id/rg_insideFlight_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/color_gray200"
+        android:layout_below="@id/edt_insideFlight_source"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/font"
+        android:drawableRight="@drawable/ic_airplanemode_active_black_24dp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:hint="شهر مقصد"
+        android:id="@+id/edt_insideFlight_destination"
+        android:layout_below="@id/edt_insideFlight_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/color_gray200"
+        android:layout_below="@id/edt_insideFlight_destination"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/font"
+        android:drawableRight="@drawable/ic_date_range_black_24dp"
+        android:gravity="center"
+        android:hint="تاریخ رفت"
+        android:layout_below="@id/edt_insideFlight_destination"
+        android:id="@+id/edt_insideFlight_date"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@color/color_gray200"
+        android:layout_below="@id/edt_insideFlight_date"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <Button
+        android:id="@+id/btn_insideFlight_search"
+        android:textSize="18sp"
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/font"
+        android:text="جستجو"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_search_style"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:id="@+id/rel_trainItem_parent"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/img_trainItem_tvIcon"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/ic_live_tv_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_trainItem_toys"
+            android:layout_toRightOf="@id/img_trainItem_tvIcon"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/ic_toys_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_trainItem_price"
+            tools:text="1,245,000 ریال"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@id/img_trainItem_tvIcon"
+            android:layout_margin="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_trainItem_endTime"
+            tools:text="08:00"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/img_trainItem_arrow"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@id/txt_trainItem_endTime"
+            app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_trainItem_startTime"
+            tools:text="11:25"
+            android:layout_toLeftOf="@id/img_trainItem_arrow"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_trainItem_capacity"
+            android:layout_below="@id/txt_trainItem_price"
+            tools:text="20 نفر"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_trainItem_type"
+            android:layout_below="@id/txt_trainItem_startTime"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:textSize="18sp"
+            tools:text=":: 5 ستاره سروش"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

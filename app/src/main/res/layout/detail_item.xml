@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:id="@+id/rel_detail_itemParent"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_detail_company"
+            android:textSize="18sp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            tools:text="تابان"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_detail_time"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:layout_below="@id/txt_detail_company"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            tools:text="12:45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_detail_kind1"
+            android:background="@drawable/txt_detail_kind1_style"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="8dp"
+            tools:text="چارتر"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_detail_kind2"
+            android:background="@drawable/txt_detail_kind2_style"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_toRightOf="@id/txt_detail_kind1"
+            android:layout_marginTop="8dp"
+            tools:text="اکونومی"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_detail_capacity"
+            tools:text="8 نفر"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/txt_detail_kind1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_detail_price"
+            tools:text="2,450,000 ریال"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/txt_detail_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

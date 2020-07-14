@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:text="مسافر عادی" />
+
+    <ImageView
+        android:id="@+id/img_dialogPassengers_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_remove_circle_blue_24dp" />
+
+    <TextView
+        android:id="@+id/txt_dialogPassengers_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@+id/img_dialogPassengers_remove"
+        android:text="1"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/img_dialogPassengers_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/txt_dialogPassengers_count"
+        app:srcCompat="@drawable/ic_add_circle_blue_24dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_dialogPassengers_add"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:text="ویژه برادران" />
+
+    <ImageView
+        android:id="@+id/imgB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_dialogPassengers_remove"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_remove_circle_blue_24dp" />
+
+    <TextView
+        android:id="@+id/txtB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_dialogPassengers_count"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@+id/imgB"
+        android:text="1"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgbright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_dialogPassengers_add"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/txt_dialogPassengers_count"
+        app:srcCompat="@drawable/ic_add_circle_blue_24dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:text="ویژه خواهران" />
+
+    <ImageView
+        android:id="@+id/imgc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgB"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_remove_circle_blue_24dp" />
+
+    <TextView
+        android:id="@+id/txtc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtB"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@+id/imgB"
+        android:text="1"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgcright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgB"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/txt_dialogPassengers_count"
+        app:srcCompat="@drawable/ic_add_circle_blue_24dp" />
+
+    <Button
+        android:id="@+id/btn_dialogPassengers_submit"
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/font"
+        android:textSize="18sp"
+        android:text="تایید"
+        android:layout_below="@id/imgc"
+        android:background="@drawable/btn_call_style"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

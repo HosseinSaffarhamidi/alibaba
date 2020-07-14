@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:id="@+id/rel_cityItem_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_cityItem_icon"
+        android:layout_margin="8dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_location_on_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="16sp"
+        android:text="تهران"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_cityItem_icon"
+        android:id="@+id/txt_cityItem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
